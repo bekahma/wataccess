@@ -27,7 +27,7 @@ img {
 
 header {
   align-items: center;
-  border-bottom: 0.5px solid lightgray;
+  border-bottom: 0.5px solid gold;
 }
 
 .desc {
@@ -35,37 +35,53 @@ header {
 }
 
 .icons {
-  border-top: 0.5px solid lightgray; 
+  border-top: 0.5px solid gold; 
   height: 50px; 
   width: 100%;
+  padding-top: 15px;
+}
+
+.icons ul {
+  margin: 0px;
+  padding: 0px; 
+  text-align: center;
+}
+
+.icons ul li {
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  text-align: center; 
+  background: lightgoldenrodyellow; 
+  border-radius: 100%;
+  margin: 0, 10px;
+  padding: 10px, auto;
+}
+
+.icons ul li a {
+  display: block;
+  color: black;
+  font-size: 20px;
+}
+
+.icons ul li a i {
+  line-height: 40px;
+}
+
+.icons ul li a:hover {
+  color: gold; 
 }
 
 .logo {
   padding: 16px;
 }
 
-.logo-icon {
+.waterloo-icon {
   vertical-align: text-bottom;
   margin-right: 12px;
 }
 
-.flex-container {
-  display: flex; 
-  justify-content: space-between;
-  padding: 10px 22px;
-}
-
-.flex {
-  opacity: 1;
-  transition: opacity 0.2s ease-in-out; 
-  width: 120px;
-}
-
-.flex:hover {
-  opacity: 0.4;
-}
-
-.flex .fa {
-  font-size: 40px;
-  color: black;
+.version {
+  color: darkgray; 
+  font-size: 18px;
 }
