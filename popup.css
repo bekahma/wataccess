@@ -35,41 +35,47 @@ header {
 }
 
 .icons {
-  border-top: 0.5px solid gold; 
-  height: 50px; 
-  width: 100%;
-  padding-top: 15px;
+  border-top: 0.5px solid gold;
+  max-width: 384px;
 }
 
 .icons ul {
-  margin: 0px;
-  padding: 0px; 
+  padding: 0; 
   text-align: center;
 }
 
-.icons ul li {
+.icons li {
+  background-color: lightgoldenrodyellow;
+  list-style: none; 
   display: inline-block;
-  width: 40px; 
-  height: 40px;
-  text-align: center; 
-  background: lightgoldenrodyellow; 
-  border-radius: 100%;
-  margin: 0, 10px;
-  padding: 10px, auto;
+  margin: 3.5px;
+  border-radius: 2em;
+  overflow: hidden;
 }
 
-.icons ul li a {
+.icons li a {
   display: block;
-  color: black;
-  font-size: 20px;
+  color: black; 
+  padding: 0.5em; 
+  min-width: 1.28571429em; 
+  max-width: 1.28571429em;
+  height: 1.28571429em; 
+  white-space: nowrap;
+  line-height: 1.5em;
+  transition: 0.5s;
+  text-decoration: none; 
+  font-size: 15px;
+  font-family: non-serif; 
 }
 
-.icons ul li a i {
-  line-height: 40px;
+.icons li i {
+  margin-right: 1em;
+  margin-left: 0.15em;
 }
 
-.icons ul li a:hover {
-  color: gold; 
+.icons li:hover a {
+  max-width: 200px;
+  padding-right: 1em;
 }
 
 .logo {
