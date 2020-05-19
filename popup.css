@@ -22,7 +22,7 @@ html, body {
   min-height: 180px;
   padding: 0;
   width: 384px;
-  background-color: rgb(252, 249, 227);
+  background-color: rgb(255, 254, 244);
 }
 
 h1 {
@@ -71,10 +71,11 @@ header {
   text-align: center;
 }
 
-.icons li {
+.icons ul li {
   background-color: black;
   list-style: none; 
   display: inline-block;
+  list-style-type: none;
   margin: 4px;
   border-radius: 2em;
   overflow: hidden;
@@ -83,7 +84,7 @@ header {
 
 .icons li a {
   display: block;
-  color: rgb(252, 249, 227); 
+  color: rgb(255, 254, 244); 
   font-family: 'Open Sans', sans-serif;
   padding: 0.5em; 
   min-width: 1.28571429em; 
@@ -92,7 +93,7 @@ header {
   white-space: nowrap;
   line-height: 1.5em;
   transition: 0.5s;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .icons li i {
