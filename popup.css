@@ -22,12 +22,14 @@ html, body {
   min-height: 180px;
   padding: 0;
   width: 384px;
+  background-color: rgb(252, 249, 227);
 }
 
 h1 {
   font-family: 'Oswald', monospace; 
   font-size: 22px;
   font-weight: 400;
+  letter-spacing: 0.75px;
   margin: 0;
   color: gold; 
 }
@@ -46,8 +48,8 @@ img {
 }
 
 .version {
-  color: lightgray; 
-  font-size: 18px;
+  color: darkgray; 
+  font-size: 16px;
 }
 
 header {
@@ -81,7 +83,7 @@ header {
 
 .icons li a {
   display: block;
-  color: white; 
+  color: rgb(252, 249, 227); 
   font-family: 'Open Sans', sans-serif;
   padding: 0.5em; 
   min-width: 1.28571429em; 
