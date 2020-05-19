@@ -22,7 +22,7 @@ html, body {
   min-height: 180px;
   padding: 0;
   width: 384px;
-  background-color: rgb(255, 254, 244);
+  background-color: whitesmoke;
 }
 
 h1 {
@@ -84,7 +84,7 @@ header {
 
 .icons li a {
   display: block;
-  color: rgb(255, 254, 244); 
+  color: whitesmoke; 
   font-family: 'Open Sans', sans-serif;
   padding: 0.5em; 
   min-width: 1.28571429em; 
