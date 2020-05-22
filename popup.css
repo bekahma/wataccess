@@ -17,7 +17,7 @@
 
 html, body {
   font-family: 'Open Sans', sans-serif; 
-  font-size: 14px; 
+  font-size: 13px; 
   margin: 0;
   min-height: 180px;
   padding: 0;
@@ -85,7 +85,7 @@ header {
 .icons li a {
   display: block;
   color: whitesmoke; 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', serif;
   padding: 0.5em; 
   min-width: 1.28571429em; 
   max-width: 1.28571429em;
@@ -105,4 +105,12 @@ header {
   max-width: 200px;
   padding-right: 1em;
   background-color: darkgray;
+}
+
+.icons #quest-icon i {
+  margin-left: 0.04em;
+}
+
+.icons #linkedin-icon i {
+  margin-left: 0.22em;
 }
