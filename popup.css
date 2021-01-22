@@ -15,14 +15,21 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+:root {
+  --main-bg-color: whitesmoke;
+  --button-color: black;
+  --desc-color: black;
+}
+
 html, body {
   font-family: 'Open Sans', sans-serif; 
   font-size: 13px; 
   margin: 0;
   padding: 0;
-  min-height: 180px;
+  min-height: 200px;
   width: 384px;
-  background-color: whitesmoke;
+  background-color: var(--main-bg-color);
+  transition: background-color 0.4s;
 }
 
 h1 {
@@ -61,9 +68,15 @@ header {
   padding: 0 20px;
 }
 
+.desc p {
+  color: var(--desc-color);
+  transition: color 0.4s;
+}
+
 .icons {
   border-top: 1.5px solid gold;
   max-width: 384px;
+  margin-bottom: -19px;
 }
 
 .icons ul {
@@ -72,18 +85,19 @@ header {
 }
 
 .icons ul li {
-  background-color: black;
+  background-color: var(--button-color);
   list-style: none; 
   display: inline-block;
   list-style-type: none;
   margin: 4px;
   border-radius: 2em;
   overflow: hidden;
+  transition: background-color 0.4s;
 }
 
 .icons li a {
   display: block;
-  color: whitesmoke; 
+  color: var(--main-bg-color); 
   font-family: 'Open Sans', serif;
   padding: 0.5em; 
   min-width: 1.28571429em; 
@@ -91,7 +105,8 @@ header {
   height: 1.28571429em; 
   white-space: nowrap;
   line-height: 1.5em;
-  transition: 0.5s;
+  transition: max-width 0.5s, color .4s;
+  transition-delay: max-width 0.5s;
   text-decoration: none;
 }
 
@@ -104,6 +119,7 @@ header {
   max-width: 200px;
   padding-right: 1em;
   background-color: darkgray;
+  transition-delay: max-width 0s;
 }
 
 .icons #quest-icon i {
@@ -112,4 +128,64 @@ header {
 
 .icons #linkedin-icon i {
   margin-left: 0.22em;
+}
+
+.theme {
+  float: right;
+  margin-left: auto;
+  margin-right: 6px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #555;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: whitesmoke;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: #777;
 }
